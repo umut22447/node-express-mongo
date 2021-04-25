@@ -1,1 +1,1 @@
-This is a Restful api work with NodeJS Express % MongoDB.
+This is a Restful api work with NodeJS Express & MongoDB.
