@@ -5,12 +5,14 @@ const cors = require('cors');
 require('dotenv/config');
 
 //IMPORT ROUTES
+const authRoutes = require('./routes/auth');
 const postsRoutes = require('./routes/posts');
 
 //Middlewares
 app.use(cors());
 app.use(express.json());
-app.use('/posts', postsRoutes);
+app.use('/api/user', authRoutes);
+app.use('/api/posts', postsRoutes);
 
 //ROUTES
 app.get('/', (req, res) => {
